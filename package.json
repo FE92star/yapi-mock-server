@@ -1,8 +1,8 @@
 {
-  "publisher": "antfu",
+  "publisher": "fe92star",
   "name": "ext-name",
   "displayName": "ext-name",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.8.0",
   "description": "",
@@ -36,14 +36,14 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
+    "dev": "npm run build --watch",
     "lint": "eslint .",
-    "vscode:prepublish": "nr build",
+    "vscode:prepublish": "pnpm build",
     "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp && nr publish"
+    "release": "bumpp && pnpm publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
