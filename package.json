@@ -1,24 +1,20 @@
 {
   "publisher": "fe92star",
-  "name": "ext-name",
-  "displayName": "ext-name",
+  "name": "yapi-mock-server",
+  "displayName": "yapi-mock-server",
   "version": "0.0.1",
   "private": true,
   "packageManager": "pnpm@7.8.0",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "fe92star <1737765939@qq.com> (https://github.com/fe92star/)",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "homepage": "https://github.com/FE92star/yapi-mock-server#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/FE92star/yapi-mock-server"
   },
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
-  },
-  "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+    "url": "https://github.com/FE92star/yapi-mock-server/issues"
   },
   "categories": [
     "Other"
