@@ -28,8 +28,16 @@
     "vscode": "^1.69.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onCommand:extension.helloWorld"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "npm run build --watch",
