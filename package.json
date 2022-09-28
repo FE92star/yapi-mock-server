@@ -4,7 +4,7 @@
   "displayName": "yapi-mock-server",
   "version": "0.0.1",
   "packageManager": "pnpm@7.8.0",
-  "description": "",
+  "description": "mock server for yapi application",
   "author": "fe92star <1737765939@qq.com> (https://github.com/fe92star/)",
   "license": "MIT",
   "homepage": "https://github.com/FE92star/yapi-mock-server#readme",
