@@ -3,7 +3,6 @@
   "name": "yapi-mock-server",
   "displayName": "yapi-mock-server",
   "version": "0.0.1",
-  "private": true,
   "packageManager": "pnpm@7.8.0",
   "description": "",
   "author": "fe92star <1737765939@qq.com> (https://github.com/fe92star/)",
