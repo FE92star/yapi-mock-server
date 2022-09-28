@@ -19,7 +19,7 @@
     "Other"
   ],
   "main": "./dist/index.js",
-  "icon": "res/icon.png",
+  "icon": "icon.png",
   "files": [
     "dist"
   ],
