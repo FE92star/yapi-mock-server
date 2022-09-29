@@ -10,16 +10,6 @@
 - [x] 梳理并罗列插件功能点
 - [x] 整理yapi的开放API
 
-## 项目会使用到的API
-
-| name | url | method | param |
-| ----------- | ----------- | ----------- | ----------- |
-| 获取项目基本信息 | /api/project/get | GET | token |
-| 获取接口菜单列表 | /api/interface/list_menu | GET | token&project_id |
-| 获取接口列表数据 | /api/interface/list| GET | token&project_id&page&limit |
-| 获取某个分类下接口列表 | /api/interface/list_cat | GET | token&catid&page&limit |
-| 获取接口数据 | /api/interface/get | GET | token&id |
-
 ## 插件功能点
 
 1. 通过项目本地`json`数据实现可配置化
