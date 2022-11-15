@@ -6,9 +6,13 @@
 ## TODO
 
 - [x] 开发工程搭建
-- [ ] 知识准备—熟悉掌握vscode插件开发流程、mock服务器开发原理
+- [x] 知识准备—熟悉掌握vscode插件开发流程、mock服务器开发原理
 - [x] 梳理并罗列插件功能点
 - [x] 整理yapi的开放API
+
+## 技术方案
+
+[yapi-mock-server技术方案](https://www.yuque.com/heiwohenhao/se0vo5/rwk16v5a9m606x7f)
 
 ## 插件功能点
 

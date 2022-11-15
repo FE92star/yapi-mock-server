@@ -4,7 +4,7 @@
   "displayName": "yapi-mock-server",
   "version": "0.0.2",
   "packageManager": "pnpm@7.8.0",
-  "description": "mock server for yapi application",
+  "description": "Mock server for yapi platform",
   "author": "fe92star <1737765939@qq.com> (https://github.com/fe92star/)",
   "license": "MIT",
   "homepage": "https://github.com/FE92star/yapi-mock-server#readme",
@@ -18,6 +18,11 @@
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "mock",
+    "yapi",
+    "server"
+  ],
   "main": "./dist/index.js",
   "icon": "icon.png",
   "files": [
@@ -27,15 +32,110 @@
     "vscode": "^1.69.0"
   },
   "activationEvents": [
-    "onCommand:extension.helloWorld"
+    "onView:YapiMockServer"
   ],
   "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "YapiMockServer",
+          "name": "Yapi-Mock小助手"
+        }
+      ]
+    },
     "commands": [
       {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
+        "command": "YapiMockServer.search",
+        "title": "Search for matching api",
+        "shortTitle": "Search"
+      },
+      {
+        "command": "YapiMockServer.clearApiFilter",
+        "title": "Clear filter",
+        "shortTitle": "Clear"
+      },
+      {
+        "command": "YapiMockServer.refresh",
+        "title": "Fetch the newest api list",
+        "shortTitle": "Refresh"
+      },
+      {
+        "command": "YapiMockServer.runServer",
+        "title": "Start a mock server",
+        "shortTitle": "Run"
+      },
+      {
+        "command": "YapiMockServer.stopServer",
+        "title": "Stop the active mock server",
+        "shortTitle": "Stop"
+      },
+      {
+        "command": "YapiMockServer.openAndUpdateApiJsonToLocal",
+        "title": "Open and update json data to local project",
+        "shortTitle": "OpenJson"
+      },
+      {
+        "command": "YapiMockServer.copyApiInfo",
+        "when": "copy current api infomation",
+        "shortTitle": "Copy"
       }
-    ]
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "YapiMockServer.runServer",
+          "when": "view == YapiMockServer && !serverEnable",
+          "group": "navigation"
+        },
+        {
+          "command": "YapiMockServer.stopServer",
+          "when": "view == YapiMockServer && serverEnable",
+          "group": "navigation"
+        },
+        {
+          "command": "YapiMockServer.refresh",
+          "when": "view == YapiMockServer",
+          "group": "navigation"
+        },
+        {
+          "command": "YapiMockServer.search",
+          "when": "view == YapiMockServer",
+          "group": "navigation"
+        },
+        {
+          "command": "YapiMockServer.clearApiFilter",
+          "when": "view == YapiMockServer && filterEnable",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "YapiMockServer.openAndUpdateApiJsonToLocal",
+          "when": "view == YapiMockServer && viewItem == coreApiItem",
+          "group": "inline"
+        },
+        {
+          "command": "YapiMockServer.copyApiInfo",
+          "when": "view == YapiMockServer && viewItem == subApiItem",
+          "group": "inline"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Yapi Mock Server Config",
+      "properties": {
+        "YapiMockServer.mock.rootDir": {
+          "type": "string",
+          "default": "${workspaceFolder}/mock",
+          "description": "mock 文件自动生成的根目录"
+        },
+        "YapiMockServer.mock.port": {
+          "type": "number",
+          "default": 10088,
+          "description": "mock 服务监听的端口"
+        }
+      }
+    }
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
