@@ -46,7 +46,8 @@
     "commands": [
       {
         "command": "YapiMockServer.search",
-        "title": "Search for matching api"
+        "title": "Search for matching api",
+        "shortTitle": "Search"
       },
       {
         "command": "YapiMockServer.clearApiFilter",
