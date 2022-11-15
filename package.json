@@ -15,13 +15,13 @@
   "bugs": {
     "url": "https://github.com/FE92star/yapi-mock-server/issues"
   },
-  "categories": [
-    "Other"
-  ],
   "keywords": [
     "mock",
     "yapi",
     "server"
+  ],
+  "categories": [
+    "Other"
   ],
   "main": "./dist/index.js",
   "icon": "icon.png",
