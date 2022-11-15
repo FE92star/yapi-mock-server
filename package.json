@@ -46,8 +46,7 @@
     "commands": [
       {
         "command": "YapiMockServer.search",
-        "title": "Search for matching api",
-        "shortTitle": "Search"
+        "title": "Search for matching api"
       },
       {
         "command": "YapiMockServer.clearApiFilter",
@@ -76,7 +75,7 @@
       },
       {
         "command": "YapiMockServer.copyApiInfo",
-        "when": "copy current api infomation",
+        "title": "copy current api infomation",
         "shortTitle": "Copy"
       }
     ],
