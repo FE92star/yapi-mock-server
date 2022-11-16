@@ -47,37 +47,65 @@
       {
         "command": "YapiMockServer.search",
         "title": "Search for matching api",
-        "shortTitle": "Search"
+        "shortTitle": "Search",
+        "icon": {
+          "dark": "resources/dark/search.svg",
+          "light": "resources/light/search.svg"
+        }
       },
       {
         "command": "YapiMockServer.clearApiFilter",
         "title": "Clear filter",
-        "shortTitle": "Clear"
+        "shortTitle": "Clear",
+        "icon": {
+          "dark": "resources/dark/clear.svg",
+          "light": "resources/light/clear.svg"
+        }
       },
       {
         "command": "YapiMockServer.refresh",
         "title": "Fetch the newest api list",
-        "shortTitle": "Refresh"
+        "shortTitle": "Refresh",
+        "icon": {
+          "dark": "resources/dark/refresh.svg",
+          "light": "resources/light/refresh.svg"
+        }
       },
       {
         "command": "YapiMockServer.runServer",
         "title": "Start a mock server",
-        "shortTitle": "Run"
+        "shortTitle": "Run",
+        "icon": {
+          "dark": "resources/dark/play.svg",
+          "light": "resources/light/play.svg"
+        }
       },
       {
         "command": "YapiMockServer.stopServer",
         "title": "Stop the active mock server",
-        "shortTitle": "Stop"
+        "shortTitle": "Stop",
+        "icon": {
+          "dark": "resources/dark/pause.svg",
+          "light": "resources/light/pause.svg"
+        }
       },
       {
         "command": "YapiMockServer.openAndUpdateApiJsonToLocal",
         "title": "Open and update json data to local project",
-        "shortTitle": "OpenJson"
+        "shortTitle": "OpenJson",
+        "icon": {
+          "dark": "resources/dark/json.svg",
+          "light": "resources/light/json.svg"
+        }
       },
       {
         "command": "YapiMockServer.copyApiInfo",
         "title": "copy current api infomation",
-        "shortTitle": "Copy"
+        "shortTitle": "Copy",
+        "icon": {
+          "dark": "resources/dark/copy.svg",
+          "light": "resources/light/copy.svg"
+        }
       }
     ],
     "menus": {
